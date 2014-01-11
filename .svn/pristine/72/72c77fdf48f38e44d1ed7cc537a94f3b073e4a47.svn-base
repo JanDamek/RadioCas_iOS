@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Com Radio Select View Controller - First-->
+        <scene sceneID="11">
+            <objects>
+                <viewController title="First" id="2" customClass="comRadioSelectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BhI-d2-P79"/>
+                        <viewControllerLayoutGuide type="bottom" id="aNR-mO-f9I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iphone_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1pw-fx-9Ze">
+                                <rect key="frame" x="0.0" y="41" width="320" height="460"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="460" id="0Dw-TZ-vAU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYl-p7-V6Q">
+                                <rect key="frame" x="42" y="138" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="qIk-bP-O5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ostravsko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ostrava:" destination="2" eventType="touchUpInside" id="Kh8-UV-k9U"/>
+                                    <segue destination="3" kind="push" id="Az2-r2-ktX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7E-WU-jon">
+                                <rect key="frame" x="42" y="94" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="ZAx-oe-8I0"/>
+                                    <constraint firstAttribute="width" constant="241" id="mOC-jr-JbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Slezsko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slezko:" destination="2" eventType="touchUpInside" id="3qO-61-iv0"/>
+                                    <segue destination="3" kind="push" id="A7H-UJ-CCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgB-1N-Yfk">
+                                <rect key="frame" x="42" y="226" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="M3t-4Y-gpZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Valašsko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="valazsko:" destination="2" eventType="touchUpInside" id="zaK-Ln-vqk"/>
+                                    <segue destination="3" kind="push" id="ziM-pv-nMV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPu-Q1-wlQ">
+                                <rect key="frame" x="42" y="182" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="MNJ-lY-GPz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Zlínsko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zlinsko:" destination="2" eventType="touchUpInside" id="wyZ-dR-2uj"/>
+                                    <segue destination="3" kind="push" id="zZ4-8g-ByY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-47-Ufb">
+                                <rect key="frame" x="42" y="400" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="hVM-Bv-VGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Brněnsko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="brnensko:" destination="2" eventType="touchUpInside" id="3Qi-B7-8r1"/>
+                                    <segue destination="3" kind="push" id="IIX-TL-bSV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prj-sm-fJd">
+                                <rect key="frame" x="40" y="443" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="a6Z-zw-HQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Slovácko" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slovacko:" destination="2" eventType="touchUpInside" id="Vc9-cj-FzA"/>
+                                    <segue destination="3" kind="push" id="whu-wH-kKm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJR-QM-tnh">
+                                <rect key="frame" x="42" y="357" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="SKy-at-BGP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Olomouc" backgroundImage="iphone_choose_radio.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="olomouc:" destination="2" eventType="touchUpInside" id="9Rn-67-Vl3"/>
+                                    <segue destination="3" kind="push" id="qa1-eI-mke"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1pw-fx-9Ze" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="4wt-Za-UwL"/>
+                            <constraint firstItem="pPu-Q1-wlQ" firstAttribute="trailing" secondItem="IgB-1N-Yfk" secondAttribute="trailing" id="5I6-2H-2c1"/>
+                            <constraint firstItem="pPu-Q1-wlQ" firstAttribute="leading" secondItem="RYl-p7-V6Q" secondAttribute="leading" id="5yO-0I-exF"/>
+                            <constraint firstItem="cJR-QM-tnh" firstAttribute="trailing" secondItem="Prj-sm-fJd" secondAttribute="trailing" constant="2" id="7jc-hA-Iza"/>
+                            <constraint firstItem="cJR-QM-tnh" firstAttribute="leading" secondItem="IgB-1N-Yfk" secondAttribute="leading" id="9TS-M1-540"/>
+                            <constraint firstItem="pPu-Q1-wlQ" firstAttribute="top" secondItem="RYl-p7-V6Q" secondAttribute="bottom" constant="3" id="CHt-1e-Sde"/>
+                            <constraint firstItem="cJR-QM-tnh" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="42" id="H15-Tr-RgS"/>
+                            <constraint firstItem="pPu-Q1-wlQ" firstAttribute="leading" secondItem="IgB-1N-Yfk" secondAttribute="leading" id="Lhg-SD-K7m"/>
+                            <constraint firstAttribute="bottom" secondItem="uKL-47-Ufb" secondAttribute="bottom" constant="127" id="O1x-vz-h2C"/>
+                            <constraint firstItem="RYl-p7-V6Q" firstAttribute="trailing" secondItem="E7E-WU-jon" secondAttribute="trailing" id="Wjx-hK-5YQ"/>
+                            <constraint firstItem="RYl-p7-V6Q" firstAttribute="top" secondItem="E7E-WU-jon" secondAttribute="bottom" constant="3" id="XLx-Ui-IIN"/>
+                            <constraint firstItem="uKL-47-Ufb" firstAttribute="trailing" secondItem="Prj-sm-fJd" secondAttribute="trailing" constant="2" id="Zi6-Hq-DHi"/>
+                            <constraint firstItem="1pw-fx-9Ze" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="adB-1L-SyJ"/>
+                            <constraint firstItem="E7E-WU-jon" firstAttribute="top" secondItem="16" secondAttribute="top" constant="94" id="bFo-g0-IeV"/>
+                            <constraint firstAttribute="bottom" secondItem="cJR-QM-tnh" secondAttribute="bottom" constant="170" id="dtv-Yu-4ej"/>
+                            <constraint firstItem="RYl-p7-V6Q" firstAttribute="leading" secondItem="E7E-WU-jon" secondAttribute="leading" id="hXy-Ek-UWf"/>
+                            <constraint firstItem="1pw-fx-9Ze" firstAttribute="top" secondItem="16" secondAttribute="top" constant="41" id="jDn-6N-41O"/>
+                            <constraint firstItem="IgB-1N-Yfk" firstAttribute="top" secondItem="pPu-Q1-wlQ" secondAttribute="bottom" constant="3" id="kCI-39-Zh9"/>
+                            <constraint firstItem="Prj-sm-fJd" firstAttribute="leading" secondItem="uKL-47-Ufb" secondAttribute="leading" constant="-2" id="lPz-z4-5pP"/>
+                            <constraint firstItem="cJR-QM-tnh" firstAttribute="leading" secondItem="Prj-sm-fJd" secondAttribute="leading" constant="2" id="muu-lG-4sv"/>
+                            <constraint firstItem="cJR-QM-tnh" firstAttribute="trailing" secondItem="IgB-1N-Yfk" secondAttribute="trailing" id="rJk-ke-USm"/>
+                            <constraint firstItem="pPu-Q1-wlQ" firstAttribute="trailing" secondItem="RYl-p7-V6Q" secondAttribute="trailing" id="tev-pf-usX"/>
+                            <constraint firstAttribute="bottom" secondItem="Prj-sm-fJd" secondAttribute="bottom" constant="84" id="zni-fX-IFn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zvi-yp-D2U">
+                        <barButtonItem key="backBarButtonItem" title="Zpět" id="6rI-Ny-BmS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="-660"/>
+        </scene>
+        <!--Com Player View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" customClass="comPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKx-ZO-Mqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="mem-Zk-d5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iphone_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-JS-OGG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iphone_now_play.png" translatesAutoresizingMaskIntoConstraints="NO" id="7wJ-5h-yPW">
+                                <rect key="frame" x="38" y="157" width="261" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="1wv-Cb-jfR"/>
+                                    <constraint firstAttribute="height" constant="68" id="7IK-ef-VWy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iphone_played.png" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-JI-ohX">
+                                <rect key="frame" x="49" y="233" width="241" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Qyr-bu-GXg"/>
+                                    <constraint firstAttribute="width" constant="241" id="jLd-FH-rYh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="X73-Od-gFb">
+                                <rect key="frame" x="104" y="73" width="128" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Kec-Ey-pfg"/>
+                                    <constraint firstAttribute="height" constant="83" id="fyT-Yr-OyM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="4wr-wV-3UB">
+                                <rect key="frame" x="38" y="184" width="246" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="DGl-qx-ROG"/>
+                                    <constraint firstAttribute="height" constant="36" id="S85-3E-vIq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="228" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-Y6-ZN5">
+                                <rect key="frame" x="56" y="349" width="228" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="3aR-2N-Qf8"/>
+                                    <constraint firstAttribute="height" constant="35" id="fd3-bQ-O7I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="player_btn_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rsU-eF-1zY">
+                                <rect key="frame" x="20" y="459" width="296" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="ULK-sG-mys"/>
+                                    <constraint firstAttribute="height" constant="37" id="ZFf-Yo-ibg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYj-O2-Hq9">
+                                <rect key="frame" x="70" y="462" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Ak7-KL-7XV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="iphone_stop_btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBtn:" destination="3" eventType="touchUpInside" id="5lO-Ho-8CF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c97-D7-mi4">
+                                <rect key="frame" x="30" y="462" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="6rf-cy-awX"/>
+                                    <constraint firstAttribute="width" constant="32" id="Pku-rh-nZo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="iphone_play_btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBtn:" destination="3" eventType="touchUpInside" id="mBm-NP-P80"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kI0-Ab-Lqb">
+                                <rect key="frame" x="119" y="461" width="178" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="oWL-IF-7gV"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="1" green="0.82882755994796753" blue="0.0" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                            </slider>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HCC-AK-GA8">
+                                <rect key="frame" x="159" y="192" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-b1-T3A">
+                                <rect key="frame" x="79" y="402" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="rJ4-80-GUq"/>
+                                    <constraint firstAttribute="height" constant="36" id="wkj-7M-Ebw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="iphone_email_btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailBtn:" destination="3" eventType="touchUpInside" id="Ig9-sB-cm8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEt-OD-nRZ">
+                                <rect key="frame" x="152" y="402" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="LFH-Mq-7rD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="iphone_call_btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="telBtn:" destination="3" eventType="touchUpInside" id="adU-Sj-XU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJq-rc-tdB">
+                                <rect key="frame" x="221" y="402" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="A5r-Ik-XiL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="iphone_sms_btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="smsBtn:" destination="3" eventType="touchUpInside" id="EEf-vL-qas"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X73-Od-gFb" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="104" id="0oc-Zn-sZn"/>
+                            <constraint firstAttribute="trailing" secondItem="ZJq-rc-tdB" secondAttribute="trailing" constant="63" id="1Uq-A8-BTD"/>
+                            <constraint firstItem="X73-Od-gFb" firstAttribute="centerX" secondItem="KB3-JI-ohX" secondAttribute="centerX" constant="-1.5" id="1Xz-MM-Cpa"/>
+                            <constraint firstItem="aRo-b1-T3A" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="79" id="5HR-Fx-T6r"/>
+                            <constraint firstItem="HEt-OD-nRZ" firstAttribute="bottom" secondItem="aRo-b1-T3A" secondAttribute="bottom" id="6CX-Jn-n1G"/>
+                            <constraint firstItem="kI0-Ab-Lqb" firstAttribute="trailing" secondItem="KB3-JI-ohX" secondAttribute="trailing" constant="5" id="FDd-8L-PCV"/>
+                            <constraint firstItem="KdF-JS-OGG" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="H00-ZZ-E7m"/>
+                            <constraint firstItem="HCC-AK-GA8" firstAttribute="bottom" secondItem="4wr-wV-3UB" secondAttribute="bottom" constant="-8" id="HTi-XS-k12"/>
+                            <constraint firstAttribute="bottom" secondItem="c97-D7-mi4" secondAttribute="bottom" constant="74" id="Kci-UI-VJe"/>
+                            <constraint firstItem="4wr-wV-3UB" firstAttribute="centerX" secondItem="rsU-eF-1zY" secondAttribute="centerX" constant="-7" id="L8t-ut-2AV"/>
+                            <constraint firstItem="HCC-AK-GA8" firstAttribute="leading" secondItem="4wr-wV-3UB" secondAttribute="leading" constant="121" id="Plz-As-aQ2"/>
+                            <constraint firstItem="lYj-O2-Hq9" firstAttribute="leading" secondItem="c97-D7-mi4" secondAttribute="trailing" constant="8" symbolic="YES" id="RK1-V0-QHi"/>
+                            <constraint firstItem="7wJ-5h-yPW" firstAttribute="top" secondItem="17" secondAttribute="top" constant="157" id="SWp-gX-Byr"/>
+                            <constraint firstItem="4wr-wV-3UB" firstAttribute="centerX" secondItem="KdF-JS-OGG" secondAttribute="centerX" constant="1" id="StX-sv-nc4"/>
+                            <constraint firstItem="c97-D7-mi4" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="30" id="T2v-Kn-Vgh"/>
+                            <constraint firstItem="KdF-JS-OGG" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" id="Uaa-3z-Glf"/>
+                            <constraint firstItem="ZJq-rc-tdB" firstAttribute="top" secondItem="HEt-OD-nRZ" secondAttribute="top" id="Wzb-Us-oY9"/>
+                            <constraint firstItem="7wJ-5h-yPW" firstAttribute="centerX" secondItem="c0d-Y6-ZN5" secondAttribute="centerX" constant="-1.5" id="Y1L-yY-xL9"/>
+                            <constraint firstItem="HEt-OD-nRZ" firstAttribute="top" secondItem="aRo-b1-T3A" secondAttribute="top" id="ZN4-3C-xE9"/>
+                            <constraint firstItem="kI0-Ab-Lqb" firstAttribute="centerY" secondItem="rsU-eF-1zY" secondAttribute="centerY" id="e3C-Bo-hkm"/>
+                            <constraint firstItem="4wr-wV-3UB" firstAttribute="top" secondItem="17" secondAttribute="top" constant="184" id="fo0-1H-Hi1"/>
+                            <constraint firstItem="KdF-JS-OGG" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="hHZ-lb-oRN"/>
+                            <constraint firstItem="KB3-JI-ohX" firstAttribute="top" secondItem="7wJ-5h-yPW" secondAttribute="bottom" constant="8" symbolic="YES" id="mLc-Y2-jdV"/>
+                            <constraint firstAttribute="bottom" secondItem="aRo-b1-T3A" secondAttribute="bottom" constant="130" id="nHz-RJ-ahC"/>
+                            <constraint firstAttribute="bottom" secondItem="rsU-eF-1zY" secondAttribute="bottom" constant="72" id="rLK-4P-UuG"/>
+                            <constraint firstItem="HEt-OD-nRZ" firstAttribute="centerX" secondItem="c0d-Y6-ZN5" secondAttribute="centerX" id="sPP-z4-FfE"/>
+                            <constraint firstItem="X73-Od-gFb" firstAttribute="top" secondItem="17" secondAttribute="top" constant="73" id="uSe-Mi-RF5"/>
+                            <constraint firstItem="7wJ-5h-yPW" firstAttribute="leading" secondItem="4wr-wV-3UB" secondAttribute="leading" id="wGv-Hz-7cf"/>
+                            <constraint firstItem="lYj-O2-Hq9" firstAttribute="top" secondItem="c97-D7-mi4" secondAttribute="top" id="xBy-lc-J7G"/>
+                            <constraint firstItem="KdF-JS-OGG" firstAttribute="top" secondItem="17" secondAttribute="top" id="xJo-5P-mYE"/>
+                            <constraint firstAttribute="bottom" secondItem="c0d-Y6-ZN5" secondAttribute="bottom" constant="184" id="ylz-5P-jjm"/>
+                            <constraint firstItem="lYj-O2-Hq9" firstAttribute="bottom" secondItem="c97-D7-mi4" secondAttribute="bottom" id="z6u-De-ssV"/>
+                            <constraint firstItem="ZJq-rc-tdB" firstAttribute="bottom" secondItem="HEt-OD-nRZ" secondAttribute="bottom" id="zMQ-FY-vIj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="MW7-rX-rCk"/>
+                    <navigationItem key="navigationItem" title="radio" id="dUA-dy-7gL"/>
+                    <connections>
+                        <outlet property="ani" destination="HCC-AK-GA8" id="E95-Vz-r3N"/>
+                        <outlet property="hlasitost" destination="kI0-Ab-Lqb" id="3Lj-ab-iIn"/>
+                        <outlet property="hraje" destination="4wr-wV-3UB" id="MBb-cQ-UEK"/>
+                        <outlet property="hralo" destination="c0d-Y6-ZN5" id="9Bj-YP-fVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="15"/>
+        </scene>
+        <!--Face Book View Controller - Facebook-->
+        <scene sceneID="fHT-bf-diP">
+            <objects>
+                <viewController id="ohp-38-Cfk" customClass="FaceBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nrY-um-kSt"/>
+                        <viewControllerLayoutGuide type="bottom" id="krj-GX-Qcf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dMf-jL-rEr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-Ud-bhf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lIT-aB-3cU"/>
+                                    <barButtonItem systemItem="undo" id="eoV-fT-SHW">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack" destination="xRm-Z6-jYD" id="tYF-rD-brR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="redo" id="TNe-p5-D8X">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goForward" destination="xRm-Z6-jYD" id="f7o-Qz-joR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="Cd9-TU-Q9d">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="reload" destination="xRm-Z6-jYD" id="rng-wa-NVT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="AZ2-OY-peR">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stopLoading" destination="xRm-Z6-jYD" id="boo-6m-wTh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EwP-NS-OcM"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-Z6-jYD">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ohp-38-Cfk" id="zuY-Gp-zEQ"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="95V-1i-Ddb">
+                                <rect key="frame" x="20" y="16" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zl3-Ud-bhf" firstAttribute="top" secondItem="dMf-jL-rEr" secondAttribute="top" id="0rg-p9-tgX"/>
+                            <constraint firstItem="xRm-Z6-jYD" firstAttribute="trailing" secondItem="dMf-jL-rEr" secondAttribute="trailing" id="25I-yW-rLr"/>
+                            <constraint firstItem="xRm-Z6-jYD" firstAttribute="top" secondItem="95V-1i-Ddb" secondAttribute="bottom" constant="8" symbolic="YES" id="I7n-XB-gDe"/>
+                            <constraint firstItem="xRm-Z6-jYD" firstAttribute="bottom" secondItem="dMf-jL-rEr" secondAttribute="bottom" id="iTj-gL-qcy"/>
+                            <constraint firstItem="95V-1i-Ddb" firstAttribute="leading" secondItem="dMf-jL-rEr" secondAttribute="leading" constant="20" symbolic="YES" id="lCl-0h-zBe"/>
+                            <constraint firstItem="xRm-Z6-jYD" firstAttribute="leading" secondItem="dMf-jL-rEr" secondAttribute="leading" id="rXj-za-Efc"/>
+                            <constraint firstItem="zl3-Ud-bhf" firstAttribute="trailing" secondItem="dMf-jL-rEr" secondAttribute="trailing" id="s9R-vF-QJZ"/>
+                            <constraint firstItem="xRm-Z6-jYD" firstAttribute="top" secondItem="zl3-Ud-bhf" secondAttribute="bottom" id="v0U-R6-PsI"/>
+                            <constraint firstItem="zl3-Ud-bhf" firstAttribute="leading" secondItem="dMf-jL-rEr" secondAttribute="leading" id="zvq-DG-Kku"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="tab_bar_facebook_smallest.png" id="exQ-Fo-huo"/>
+                    <navigationItem key="navigationItem" id="FjM-OI-veh"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="facebook" destination="xRm-Z6-jYD" id="umU-KD-XX6"/>
+                        <outlet property="progres" destination="95V-1i-Ddb" id="qTb-Gl-WrZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfQ-GU-shW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="1381"/>
+        </scene>
+        <!--Web View Controller - Web-->
+        <scene sceneID="5zw-oc-4Mq">
+            <objects>
+                <viewController id="gaQ-OT-AHZ" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tid-eh-7YH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZbT-mz-3i4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uhq-Zs-M3i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gie-6E-2zz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cyw-ew-KOW"/>
+                                    <barButtonItem systemItem="undo" id="ri4-ky-hvW">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack" destination="EO8-hk-8Nv" id="TAM-qX-EXh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="redo" id="Gti-8E-hLo">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goForward" destination="EO8-hk-8Nv" id="6m1-gw-jHg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="a9d-9V-KLU">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="reload" destination="EO8-hk-8Nv" id="ff0-ae-DKF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="QQT-3h-m9e">
+                                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stopLoading" destination="EO8-hk-8Nv" id="92l-xZ-Az8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="k4c-2T-ahX"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EO8-hk-8Nv">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gaQ-OT-AHZ" id="Vq9-oS-V84"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-5k-q66">
+                                <rect key="frame" x="20" y="12" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EO8-hk-8Nv" firstAttribute="top" secondItem="gie-6E-2zz" secondAttribute="bottom" id="AvX-ZQ-e7D"/>
+                            <constraint firstItem="gie-6E-2zz" firstAttribute="top" secondItem="uhq-Zs-M3i" secondAttribute="top" id="CgJ-jO-J0x"/>
+                            <constraint firstItem="EO8-hk-8Nv" firstAttribute="bottom" secondItem="uhq-Zs-M3i" secondAttribute="bottom" id="IHK-9s-Uer"/>
+                            <constraint firstItem="Bah-5k-q66" firstAttribute="leading" secondItem="uhq-Zs-M3i" secondAttribute="leading" constant="20" symbolic="YES" id="Std-ge-mkX"/>
+                            <constraint firstItem="EO8-hk-8Nv" firstAttribute="centerX" secondItem="gie-6E-2zz" secondAttribute="centerX" id="WKu-H6-bS5"/>
+                            <constraint firstItem="EO8-hk-8Nv" firstAttribute="leading" secondItem="uhq-Zs-M3i" secondAttribute="leading" id="mk4-a0-KMv"/>
+                            <constraint firstItem="gie-6E-2zz" firstAttribute="centerY" secondItem="Bah-5k-q66" secondAttribute="centerY" id="w8E-l8-FFt"/>
+                            <constraint firstItem="gie-6E-2zz" firstAttribute="trailing" secondItem="uhq-Zs-M3i" secondAttribute="trailing" id="wZr-ka-SMB"/>
+                            <constraint firstItem="gie-6E-2zz" firstAttribute="leading" secondItem="uhq-Zs-M3i" secondAttribute="leading" id="xnd-2a-7tD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" image="tab_bar_web_smallest.png" id="lPt-a3-npj"/>
+                    <navigationItem key="navigationItem" id="zbR-AT-w5A"/>
+                    <connections>
+                        <outlet property="progres" destination="Bah-5k-q66" id="Ejg-o5-eEd"/>
+                        <outlet property="webview" destination="EO8-hk-8Nv" id="Baj-9k-cYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQ6-J3-QoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="664"/>
+        </scene>
+        <!--Navigation Controller - Rádia-->
+        <scene sceneID="u51-yf-b0r">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="B45-26-NgL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rádia" image="tab_bar_radia_smallest.png" id="Ygd-7k-esv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Co8-ua-ySm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="TK7-pk-Cf1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZJ-8j-QQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="-660"/>
+        </scene>
+        <!--Tab Bar Controller - Radio-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Radio" id="xf6-Vl-efg">
+                        <barButtonItem key="backBarButtonItem" title="Zpět" id="wND-5k-QeZ"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="B45-26-NgL" kind="relationship" relationship="viewControllers" id="ztu-zI-ocB"/>
+                        <segue destination="w66-Yx-cOM" kind="relationship" relationship="viewControllers" id="Y9f-bN-ZQB"/>
+                        <segue destination="gaQ-OT-AHZ" kind="relationship" relationship="viewControllers" id="M1q-1y-gOh"/>
+                        <segue destination="ohp-38-Cfk" kind="relationship" relationship="viewControllers" id="bcO-9n-jp6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="180"/>
+        </scene>
+        <!--Navigation Controller - Player-->
+        <scene sceneID="qmt-1O-Mj5">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="w66-Yx-cOM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Player" image="tab_bar_player_smallest.png" id="May-hh-KJp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Ip-fQ-GDI">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="rootViewController" id="Ui4-ZW-cYw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZs-JU-Y4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="-29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone_bg.png" width="640" height="960"/>
+        <image name="iphone_call_btn.png" width="72" height="72"/>
+        <image name="iphone_choose_radio.png" width="482" height="82"/>
+        <image name="iphone_email_btn.png" width="72" height="72"/>
+        <image name="iphone_now_play.png" width="523" height="136"/>
+        <image name="iphone_play_btn.png" width="64" height="64"/>
+        <image name="iphone_played.png" width="460" height="116"/>
+        <image name="iphone_sms_btn.png" width="72" height="72"/>
+        <image name="iphone_stop_btn.png" width="64" height="64"/>
+        <image name="logo_big.png" width="245" height="183"/>
+        <image name="player_btn_bg.png" width="561" height="80"/>
+        <image name="tab_bar_facebook_smallest.png" width="30" height="30"/>
+        <image name="tab_bar_player_smallest.png" width="30" height="30"/>
+        <image name="tab_bar_radia_smallest.png" width="30" height="30"/>
+        <image name="tab_bar_web_smallest.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ziM-pv-nMV"/>
+    </inferredMetricsTieBreakers>
+</document>
