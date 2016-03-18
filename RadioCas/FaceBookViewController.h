@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface FaceBookViewController : UIViewController <UIWebViewDelegate>
+@interface FaceBookViewController : UIViewController <UIWebViewDelegate,ADBannerViewDelegate>
 
 @property (retain, nonatomic) IBOutlet UIWebView *facebook;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *progres;

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface comRadioSelectViewController : UIViewController
+@interface comRadioSelectViewController : UIViewController<ADBannerViewDelegate>
 
 -(IBAction)ostrava:(id)sender;
 -(IBAction)slezko:(id)sender;

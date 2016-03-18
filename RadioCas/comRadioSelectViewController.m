@@ -34,6 +34,7 @@
     [view addSubview:imageView];
     
     self.navigationItem.titleView = view;
+    self.canDisplayBannerAds = true;
 }
 
 - (void)didReceiveMemoryWarning

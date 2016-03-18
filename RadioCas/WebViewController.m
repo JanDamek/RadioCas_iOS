@@ -30,6 +30,8 @@
     [super viewDidLoad];
     webview.delegate = self;
 	[webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.radiocas.cz"]]];
+    
+    self.canDisplayBannerAds = true;
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView

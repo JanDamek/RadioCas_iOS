@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="SaP-0Z-M3t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="SaP-0Z-M3t">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Com Radio Select View Controller - First-->
+        <!--First-->
         <scene sceneID="MLi-ou-NV0">
             <objects>
                 <viewController title="First" id="6da-Z2-K7l" customClass="comRadioSelectViewController" sceneMemberID="viewController">
@@ -128,6 +128,10 @@
                                     <segue destination="PbL-O8-8HQ" kind="push" id="RtP-xE-ePr"/>
                                 </connections>
                             </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3ML-b6-7HM">
+                                <rect key="frame" x="144" y="867" width="480" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -140,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="552" y="-96"/>
         </scene>
-        <!--Com Player View Controller - Second-->
+        <!--Second-->
         <scene sceneID="Clw-il-F4X">
             <objects>
                 <viewController title="Second" id="PbL-O8-8HQ" customClass="comPlayerViewController" sceneMemberID="viewController">
@@ -246,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="2156" y="773"/>
         </scene>
-        <!--Face Book View Controller - Facebook-->
+        <!--Facebook-->
         <scene sceneID="SgU-nJ-0RR">
             <objects>
                 <viewController id="t97-an-Quk" customClass="FaceBookViewController" sceneMemberID="viewController">
@@ -314,7 +318,7 @@
             </objects>
             <point key="canvasLocation" x="-605" y="3663"/>
         </scene>
-        <!--Web View Controller - Web-->
+        <!--Web-->
         <scene sceneID="I1b-4z-5cL">
             <objects>
                 <viewController id="lRQ-GF-bYm" customClass="WebViewController" sceneMemberID="viewController">
@@ -381,7 +385,7 @@
             </objects>
             <point key="canvasLocation" x="-617" y="2378"/>
         </scene>
-        <!--Navigation Controller - Radios-->
+        <!--Radios-->
         <scene sceneID="DFj-sB-hdA">
             <objects>
                 <navigationController definesPresentationContext="YES" id="iT5-VU-Coy" sceneMemberID="viewController">
@@ -400,7 +404,7 @@
             </objects>
             <point key="canvasLocation" x="-597" y="-114"/>
         </scene>
-        <!--Tab Bar Controller - Radio-->
+        <!--Radio-->
         <scene sceneID="88U-54-eBG">
             <objects>
                 <tabBarController id="SaP-0Z-M3t" sceneMemberID="viewController">
@@ -426,7 +430,7 @@
             </objects>
             <point key="canvasLocation" x="-2387" y="1430"/>
         </scene>
-        <!--Navigation Controller - Player-->
+        <!--Player-->
         <scene sceneID="xCK-de-zLU">
             <objects>
                 <navigationController definesPresentationContext="YES" id="kp4-Mw-dgV" sceneMemberID="viewController">
@@ -460,11 +464,6 @@
         <image name="tab_bar_radia_smallest.png" width="30" height="30"/>
         <image name="tab_bar_web_smallest.png" width="30" height="30"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="lwx-LB-5y8"/>
     </inferredMetricsTieBreakers>

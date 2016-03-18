@@ -33,6 +33,7 @@
     [self.view addSubview:volumeView];
     
     volumeView.center= hlasitost.center;
+    self.canDisplayBannerAds = true;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -99,16 +100,16 @@
     url = [NSURL URLWithString:@"http://www.casrock.cz/nowplaying/casonair.php"];
     
     NSError *error;
-    NSStringEncoding encoding=NSWindowsNTOperatingSystem;
+    NSStringEncoding encoding=1;
     NSString *pageData = [NSString stringWithContentsOfURL:url encoding:encoding error:&error];
     
     NSString *skladbyData = pageData;
     
-    NSMutableCharacterSet *toRemove = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+//    NSMutableCharacterSet *toRemove = [NSCharacterSet whitespaceAndNewlineCharacterSet];
 //    [toRemove addCharactersInString:@"\t"];
 //    [toRemove addCharactersInString:@"\n"];
     
-    skladbyData = [skladbyData stringByTrimmingCharactersInSet:toRemove];
+    skladbyData = [skladbyData stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
                                                                  
     NSDictionary *skladby = [XMLReader dictionaryForXMLString:skladbyData error:nil];
     
@@ -121,7 +122,7 @@
                            [[item valueForKey:@"TITLE"] valueForKey:@"text"]];
             h = [h stringByReplacingOccurrencesOfString:@"\n" withString:@""];
             h = [h stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-            h =  [h stringByTrimmingCharactersInSet:toRemove];
+            h =  [h stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
 //            hraje.text = h;
             hraje.text = [d.player decodeCZ:h];
@@ -132,7 +133,7 @@
                                [[item valueForKey:@"TITLE"] valueForKey:@"text"]];
                 h = [h stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                 h = [h stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-                h =  [h stringByTrimmingCharactersInSet:toRemove];
+                h =  [h stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 //                hralo.text = h;
                 hralo.text = [d.player decodeCZ:h];
             }

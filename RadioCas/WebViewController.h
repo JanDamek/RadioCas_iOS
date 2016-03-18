@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface WebViewController : UIViewController<UIWebViewDelegate>
+@interface WebViewController : UIViewController<UIWebViewDelegate,ADBannerViewDelegate>
 
 @property (retain, nonatomic) IBOutlet UIWebView *webview;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *progres;

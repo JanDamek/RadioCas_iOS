@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "comPlayer.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <iAd/iAd.h>
 
-@interface comPlayerViewController : UIViewController <comPlayerDelegate, UIAlertViewDelegate>{
+@interface comPlayerViewController : UIViewController <comPlayerDelegate, UIAlertViewDelegate, ADBannerViewDelegate>{
     NSTimer *interval;
     MPVolumeView *volumeView;
     

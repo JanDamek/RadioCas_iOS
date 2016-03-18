@@ -30,6 +30,8 @@
     [super viewDidLoad];
     facebook.delegate = self;
 	[facebook loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.facebook.com/casradio.cz"]]];
+    
+    self.canDisplayBannerAds = true;
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)facebook

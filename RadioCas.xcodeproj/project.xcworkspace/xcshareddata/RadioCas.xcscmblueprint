@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "105F2666DB70A060FC65EDB553D4F6B20ABE8EDE+++A98AAAD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "105F2666DB70A060FC65EDB553D4F6B20ABE8EDE+++A98AAAD" : {
+
+    },
+    "6ee5f244-f7f3-4c61-9716-4aa0b196dc92++505+++0A45910" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "105F2666DB70A060FC65EDB553D4F6B20ABE8EDE+++A98AAAD" : 0,
+    "6ee5f244-f7f3-4c61-9716-4aa0b196dc92++505+++0A45910" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "05A79ADB-9843-47F1-A5F7-4D4058110CEC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "105F2666DB70A060FC65EDB553D4F6B20ABE8EDE+++A98AAAD" : "RadioCas_iOS\/",
+    "6ee5f244-f7f3-4c61-9716-4aa0b196dc92++505+++0A45910" : "RadioCas_iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RadioCas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RadioCas.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.digitalscope.cz\/svn\/cas-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "105F2666DB70A060FC65EDB553D4F6B20ABE8EDE+++A98AAAD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JanDamek\/RadioCas_iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ee5f244-f7f3-4c61-9716-4aa0b196dc92++505+++0A45910"
+    }
+  ]
+}
