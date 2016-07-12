@@ -6,23 +6,20 @@
 //  Copyright (c) 2013 digitalscope. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comRadioSelectViewController.h"
 #import "comAppDelegate.h"
+#import "ServiceTools.h"
 
 @interface comRadioSelectViewController ()
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end
 
 @implementation comRadioSelectViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -34,7 +31,8 @@
     [view addSubview:imageView];
     
     self.navigationItem.titleView = view;
-    self.canDisplayBannerAds = true;
+    
+    [ServiceTools GADInitialization:_bannerView rootViewController:self];
 }
 
 - (void)didReceiveMemoryWarning

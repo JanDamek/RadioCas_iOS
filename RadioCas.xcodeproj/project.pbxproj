@@ -72,8 +72,11 @@
 		C4D1B32D17CA080F008BF652 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D1B32C17CA080F008BF652 /* Default@2x.png */; };
 		C4D1B32F17CA0829008BF652 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D1B32E17CA0829008BF652 /* Default-Portrait@2x~ipad.png */; };
 		C4D1B33117CA083E008BF652 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D1B33017CA083E008BF652 /* Default-Landscape@2x~ipad.png */; };
+		D08C6154BF719D76E65D57B0 /* libPods-RadioCas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A87AAFBEF3298F4848F4 /* libPods-RadioCas.a */; };
 		EB7E767E1C88529F002E3AE1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7E767D1C88529F002E3AE1 /* Launch Screen.storyboard */; };
-		EBAA78AA1C85C9CC0034BCDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA78A91C85C9CC0034BCDD /* iAd.framework */; };
+		EBAFDEEE1D352AA6008BEBF6 /* ServiceTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAFDEED1D352AA6008BEBF6 /* ServiceTools.m */; };
+		EBAFDEF01D352B0C008BEBF6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBAFDEEF1D352B0C008BEBF6 /* Podfile */; };
+		EBAFDEF21D352B25008BEBF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBAFDEF11D352B25008BEBF6 /* GoogleService-Info.plist */; };
 		F512A9C3174D661D00A07F9D /* comPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F512A9C2174D661D00A07F9D /* comPlayer.m */; };
 		F512A9CB174D66FF00A07F9D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F512A9C4174D66FF00A07F9D /* AudioToolbox.framework */; };
 		F512A9CC174D66FF00A07F9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F512A9C5174D66FF00A07F9D /* AVFoundation.framework */; };
@@ -102,6 +105,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4753D556AEAF2A19194B8300 /* Pods-RadioCas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioCas.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioCas/Pods-RadioCas.release.xcconfig"; sourceTree = "<group>"; };
+		6DB7A87AAFBEF3298F4848F4 /* libPods-RadioCas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RadioCas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AB49C2C37D624627B3C0A6 /* Pods-RadioCas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioCas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioCas/Pods-RadioCas.debug.xcconfig"; sourceTree = "<group>"; };
 		C403EEC21825C4A400CF5F29 /* ico_120120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_120120.png; sourceTree = "<group>"; };
 		C403EEC41825C51900CF5F29 /* ipad1024x768_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad1024x768_portrait.png; sourceTree = "<group>"; };
 		C403EEC61825C57400CF5F29 /* ipad768x1024_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad768x1024_portrait.png; sourceTree = "<group>"; };
@@ -168,7 +174,10 @@
 		C4D1B32E17CA0829008BF652 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		C4D1B33017CA083E008BF652 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		EB7E767D1C88529F002E3AE1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		EBAA78A91C85C9CC0034BCDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EBAFDEEC1D352AA6008BEBF6 /* ServiceTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTools.h; sourceTree = "<group>"; };
+		EBAFDEED1D352AA6008BEBF6 /* ServiceTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceTools.m; sourceTree = "<group>"; };
+		EBAFDEEF1D352B0C008BEBF6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EBAFDEF11D352B25008BEBF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F512A9C1174D661D00A07F9D /* comPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comPlayer.h; sourceTree = "<group>"; };
 		F512A9C2174D661D00A07F9D /* comPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comPlayer.m; sourceTree = "<group>"; };
 		F512A9C4174D66FF00A07F9D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -210,7 +219,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAA78AA1C85C9CC0034BCDD /* iAd.framework in Frameworks */,
 				F512A9CB174D66FF00A07F9D /* AudioToolbox.framework in Frameworks */,
 				F512A9CC174D66FF00A07F9D /* AVFoundation.framework in Frameworks */,
 				F512A9CD174D66FF00A07F9D /* CoreFoundation.framework in Frameworks */,
@@ -221,12 +229,22 @@
 				F57DC40F172ECA1C00EE0DB2 /* UIKit.framework in Frameworks */,
 				F57DC411172ECA1C00EE0DB2 /* Foundation.framework in Frameworks */,
 				F57DC413172ECA1C00EE0DB2 /* CoreGraphics.framework in Frameworks */,
+				D08C6154BF719D76E65D57B0 /* libPods-RadioCas.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		255E8F54982BBC519A3BD570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79AB49C2C37D624627B3C0A6 /* Pods-RadioCas.debug.xcconfig */,
+				4753D556AEAF2A19194B8300 /* Pods-RadioCas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6309C370176106DF00F704FB /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,12 +371,16 @@
 		F57DC402172ECA1C00EE0DB2 = {
 			isa = PBXGroup;
 			children = (
+				EBAFDEF11D352B25008BEBF6 /* GoogleService-Info.plist */,
+				EBAFDEEF1D352B0C008BEBF6 /* Podfile */,
 				EB7E767D1C88529F002E3AE1 /* Launch Screen.storyboard */,
+				F5F246591744413800F2D209 /* MainStoryboard_iPhone.storyboard */,
 				F5C2200317EAE5CE000A1D4A /* Images.xcassets */,
 				6309C370176106DF00F704FB /* images */,
 				F57DC414172ECA1C00EE0DB2 /* RadioCas */,
 				F57DC40D172ECA1C00EE0DB2 /* Frameworks */,
 				F57DC40C172ECA1C00EE0DB2 /* Products */,
+				255E8F54982BBC519A3BD570 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -373,7 +395,6 @@
 		F57DC40D172ECA1C00EE0DB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBAA78A91C85C9CC0034BCDD /* iAd.framework */,
 				F512A9C4174D66FF00A07F9D /* AudioToolbox.framework */,
 				F512A9C5174D66FF00A07F9D /* AVFoundation.framework */,
 				F512A9C6174D66FF00A07F9D /* CoreFoundation.framework */,
@@ -384,6 +405,7 @@
 				F57DC40E172ECA1C00EE0DB2 /* UIKit.framework */,
 				F57DC410172ECA1C00EE0DB2 /* Foundation.framework */,
 				F57DC412172ECA1C00EE0DB2 /* CoreGraphics.framework */,
+				6DB7A87AAFBEF3298F4848F4 /* libPods-RadioCas.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -394,7 +416,6 @@
 				F5C2200517EAE63E000A1D4A /* RadioCas.entitlements */,
 				F5BBD4F31767C2050029CFDA /* classes */,
 				F512A9D2174D671700A07F9D /* player */,
-				F5F246591744413800F2D209 /* MainStoryboard_iPhone.storyboard */,
 				F56D9020174439920095C38F /* comAppDelegate.h */,
 				F56D9021174439920095C38F /* comAppDelegate.m */,
 				F58D22BD175E89CB0005D2D5 /* comRadioSelectViewController.h */,
@@ -424,6 +445,8 @@
 		F5BBD4F31767C2050029CFDA /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EBAFDEEC1D352AA6008BEBF6 /* ServiceTools.h */,
+				EBAFDEED1D352AA6008BEBF6 /* ServiceTools.m */,
 				F5BBD4F41767C2290029CFDA /* XMLReader.h */,
 				F5BBD4F51767C2290029CFDA /* XMLReader.m */,
 			);
@@ -437,9 +460,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F57DC43C172ECA1C00EE0DB2 /* Build configuration list for PBXNativeTarget "RadioCas" */;
 			buildPhases = (
+				7FFAF866A2800526125FB54A /* [CP] Check Pods Manifest.lock */,
 				F57DC407172ECA1C00EE0DB2 /* Sources */,
 				F57DC408172ECA1C00EE0DB2 /* Frameworks */,
 				F57DC409172ECA1C00EE0DB2 /* Resources */,
+				AADC1EA6F2993ED6CA5BBE3A /* [CP] Embed Pods Frameworks */,
+				36A98CD1FFAD1C3B10A623A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -530,6 +556,7 @@
 				C423F07C1762C98400E22D3F /* tab_bar_radia_smallest.png in Resources */,
 				C423F07D1762C98400E22D3F /* tab_bar_player_smallest.png in Resources */,
 				C4A95279180DC9FA00E2EA07 /* ico_29x29.png in Resources */,
+				EBAFDEF21D352B25008BEBF6 /* GoogleService-Info.plist in Resources */,
 				C423F07E1762C98400E22D3F /* tab_bar_facebook_smallest.png in Resources */,
 				C423F0801762CDB000E22D3F /* tab_bar_bg_with_ico.png in Resources */,
 				C423F0841762D37500E22D3F /* mockup_iphone_2.jpg in Resources */,
@@ -554,6 +581,7 @@
 				C436A4F817DC1DDD00499736 /* ipad_logo_medium.png in Resources */,
 				C436A4F917DC1DDD00499736 /* ipad_logo_small.png in Resources */,
 				C436A4FA17DC1DDD00499736 /* ipad_mail_btn.png in Resources */,
+				EBAFDEF01D352B0C008BEBF6 /* Podfile in Resources */,
 				C436A4FB17DC1DDD00499736 /* ipad_nav_bar.png in Resources */,
 				C436A4FC17DC1DDD00499736 /* ipad_now_play.png in Resources */,
 				C436A4FD17DC1DDD00499736 /* ipad_play_btn.png in Resources */,
@@ -568,6 +596,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36A98CD1FFAD1C3B10A623A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioCas/Pods-RadioCas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFAF866A2800526125FB54A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AADC1EA6F2993ED6CA5BBE3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioCas/Pods-RadioCas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F57DC407172ECA1C00EE0DB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -577,6 +653,7 @@
 				F56D9042174439920095C38F /* main.m in Sources */,
 				F512A9C3174D661D00A07F9D /* comPlayer.m in Sources */,
 				F58D22BF175E89CB0005D2D5 /* comRadioSelectViewController.m in Sources */,
+				EBAFDEEE1D352AA6008BEBF6 /* ServiceTools.m in Sources */,
 				F58D22C2175E8C190005D2D5 /* comPlayerViewController.m in Sources */,
 				F5BBD4F61767C2290029CFDA /* XMLReader.m in Sources */,
 			);
@@ -599,6 +676,7 @@
 				F5F2465A1744413800F2D209 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			path = RadioCas;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -630,7 +708,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,7 +733,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -665,15 +743,16 @@
 		};
 		F57DC43D172ECA1C00EE0DB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AB49C2C37D624627B3C0A6 /* Pods-RadioCas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RadioCas/RadioCas.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioCas/RadioCas-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/RadioCas/RadioCas-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.RadioCas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -684,15 +763,16 @@
 		};
 		F57DC43E172ECA1C00EE0DB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4753D556AEAF2A19194B8300 /* Pods-RadioCas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RadioCas/RadioCas.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioCas/RadioCas-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/RadioCas/RadioCas-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.RadioCas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

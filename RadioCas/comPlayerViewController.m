@@ -6,22 +6,22 @@
 //  Copyright (c) 2013 digitalscope. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comPlayerViewController.h"
 #import "comAppDelegate.h"
 #import "XMLReader.h"
+#import "ServiceTools.h"
+
+@interface comPlayerViewController ()
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
+@end
 
 @implementation comPlayerViewController
 
 @synthesize hlasitost, hraje, hralo, ani;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -33,7 +33,8 @@
     [self.view addSubview:volumeView];
     
     volumeView.center= hlasitost.center;
-    self.canDisplayBannerAds = true;
+    
+    [ServiceTools GADInitialization:_bannerView rootViewController:self];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
